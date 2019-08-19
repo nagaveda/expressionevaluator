@@ -41,7 +41,7 @@ button:hover{
     transform: scale(1.7);
     background-color: pink;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:1200px){
     #input{
         padding-left: 100px;
     }
