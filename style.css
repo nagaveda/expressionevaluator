@@ -9,7 +9,7 @@
     font-family: fantasy;
     text-align: center;
     margin-left: 490px;
-    margin-top:130px;
+    margin-top:80px;
     text-shadow: 2px 2px 2px red;
     width: 390px;
     height: 100px;
@@ -24,7 +24,7 @@ body{
 }
 #middle{
     font-family: fantasy;
-    padding-left: 300px;
+    padding-left: 250px;
     width: 700px;
 }
 .grid{
@@ -49,7 +49,7 @@ body{
     height: 250px;
     box-shadow: 2px 2px 2px 3px black;
     margin-right: 50px;
-    margin-left:190px; 
+    margin-left:0px; 
     font-family: fantasy;
     font-size: 60px;
     cursor: pointer;
