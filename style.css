@@ -112,7 +112,7 @@ a:visited{
 #note{
     padding-left:250px; 
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1000px){
     #head{
         width:50%;
         margin-left:100px;
@@ -127,7 +127,7 @@ a:visited{
         height: 50cm;
     }
     .grid{
-        display: grid;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         grid-gap: 30px;
@@ -141,6 +141,26 @@ a:visited{
         font-family: fantasy;
         font-size: 60px;
         cursor: pointer;
+    }
+    .grid4{
+        width:200px;
+        height: 250px;
+        box-shadow: 2px 2px 2px 3px black;
+        font-family: fantasy;
+        font-size: 43px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .grid3{
+        width:200px;
+        height: 250px;
+        box-shadow: 2px 2px 2px 3px black;
+        margin-right: 50px;
+        font-family: fantasy;
+        font-size: 43px;
+        cursor: pointer;
+        margin-top: 40px;
     }
 
     #note{
