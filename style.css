@@ -29,79 +29,13 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-columns: 4;
-    display: inline;
+    
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+    padding: 20px;
+    
 } 
-.grid{
-    /* display: grid;
-    
-    width:200px;
-    height: 250px;
-    box-shadow: 2px 2px 2px black;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
-    display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-    grid-gap: 30px;
-}
-.grid1{
-    width:200px;
-    height: 250px;
-    box-shadow: 2px 2px 2px 3px black;
-    margin-right: 50px;
-    margin-left:0px; 
-    font-family: fantasy;
-    font-size: 60px;
-    cursor: pointer;
-}
-.grid1:hover{
-    transition: all 1s;
-    transform: scale(1.3);
-    background-color: pink;
-    
-}
-.grid2:hover{
-    transition: all 1s;
-    transform: scale(1.3);
-    background-color: pink;
-}
-.grid3:hover{
-    transition: all 1s;
-    transform: scale(1.3);
-    background-color: pink;
-}
-.grid4:hover{
-    transition: all 1s;
-    transform: scale(1.3);
-    background-color: pink;
-}
-.grid2{
-    width:200px;
-    height: 250px;
-    box-shadow: 2px 2px 2px 3px black;
-    margin-right: 50px;
-    font-family: fantasy;
-    font-size: 60px;
-    cursor: pointer;
-}
-.grid3{
-    width:200px;
-    height: 250px;
-    box-shadow: 2px 2px 2px 3px black;
-    margin-right: 50px;
-    font-family: fantasy;
-    font-size: 43px;
-    cursor: pointer;
-}
-.grid4{
-    width:200px;
-    height: 250px;
-    box-shadow: 2px 2px 2px 3px black;
-    font-family: fantasy;
-    font-size: 43px;
-    cursor: pointer;
-}
-a{
+ a{
     text-decoration: none;
     color: black;
 }
@@ -113,117 +47,45 @@ a:visited{
     padding-left:250px; 
     
 }
-@media screen and (max-width:550px){
-    #head{
-        width:50%;
-        margin-left:100px;
-        font-size: 0.75em;
-    }
-    #middle{
-        padding-left: 140px;
-        width: 50%;
-
-    }
-    #particles-js{
-        height: 50cm;
-    }
-    .grid{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-gap: 30px;
-    }
-    .grid1{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        margin-right: 50px;
-        margin-left:0px; 
-        font-family: fantasy;
-        font-size: 60px;
-        cursor: pointer;
-    }
-    .grid4{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        font-family: fantasy;
-        font-size: 43px;
-        cursor: pointer;
-        /* margin-top: 40px; */
-        margin-left: 0px;
-    }
-    /* .grid3{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        margin-right: 50px;
-        font-family: fantasy;
-        font-size: 43px;
-        cursor: pointer;
-        margin-top: 40px;
-    } */
-
-    #note{
-        padding-left:140px; 
-        width: 300px;
-    }
-
+.grid > div{
+    background:none;
+    box-shadow: 3px 3px 3px 3px black;
+    grid-auto-rows: minmax(100px,auto);
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 2em;
+    
 }
-@media screen and (max-width:1040px){
+.grid > div:hover{
+    background: pink;
+    transition: all 1s;
+    transform: scale(1.4);
+}
+@media screen and (max-width:700px){
     #head{
-        width:50%;
-        margin-left:100px;
-        font-size: 0.75em;
+        margin-left: 50px;
+        height: 100px;
+        font-family: fantasy;
+    }
+    #note{
+        padding-left: 50px;
+        width: 400px;
+
     }
     #middle{
-        padding-left: 140px;
-        width: 50%;
+        padding-left: 50px;
+        width: 400px;
+        font-family: fantasy;
+    }
+    .grid{
+        padding-left: 50px;
+        width: 500px;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: fantasy;
 
     }
     #particles-js{
-        height: 50cm;
-    }
-    .grid{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-gap: 30px;
-    }
-    .grid1{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        margin-right: 50px;
-        margin-left:0px; 
-        font-family: fantasy;
-        font-size: 60px;
-        cursor: pointer;
-    }
-    .grid4{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        font-family: fantasy;
-        font-size: 43px;
-        cursor: pointer;
-        /* margin-top: 40px; */
-        margin-left: 0px;
-    }
-    .grid3{
-        width:200px;
-        height: 250px;
-        box-shadow: 2px 2px 2px 3px black;
-        margin-right: 50px;
-        font-family: fantasy;
-        font-size: 43px;
-        cursor: pointer;
-        /* margin-top: 40px; */
-    }
-
-    #note{
-        padding-left:140px; 
-        width: 300px;
+        height: 150vh;
     }
 
 }
